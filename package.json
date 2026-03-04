@@ -1,0 +1,43 @@
+{
+  "name": "ecommerce_mern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm run start",
+    "server-install": "npm install",
+    "client-install": "cd client && npm install",
+    "install-all": "concurrently \"npm run server-install\" \"npm run client-install\"",
+    "dev": "concurrently \"npm run server\"",
+    "migrate:inventory": "node scripts/migrate-inventory.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.20.1",
+    "cloudinary": "^1.23.0",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.3.3",
+    "nodemailer": "^7.0.10",
+    "qs": "^6.11.2",
+    "request": "^2.88.2",
+    "socket.io": "^4.8.1",
+    "stripe": "^14.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
