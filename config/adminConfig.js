@@ -5,7 +5,7 @@
 
 const ADMIN_IDS = [
     "6919e36400ed9addca8f882b",  // Admin chính
-
+    "69bfc070c868c9ed571c0956",  // Admin phụ (nếu có)
     // Thêm admin ID khác nếu cần: "id_admin_2", "id_admin_3", ...
 ];
 
